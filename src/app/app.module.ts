@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -24,6 +25,7 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +38,7 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     LoadingComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot( ROUTES, { useHash: true } )
